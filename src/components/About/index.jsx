@@ -1,25 +1,27 @@
 import AboutComp from "./components/AboutComp";
-import mission from '../../assets/images/mission.png';
+import vision from "../../assets/images/vision.png";
+import mission from "../../assets/images/mission.png";
+import setApart from "../../assets/images/set-apart.png";
 
 function About() {
   const AboutItems = [
     {
       index: "1",
-      src: mission,
+      src: vision,
       title: "Vision",
       content:
         "Empowering a Connected World Through Sustainable Digital Innovation.",
     },
     {
       index: "2",
-      src: "/src/assets/images/mission.png",
+      src: mission,
       title: "Mission",
       content:
         "To be the Catalyst of Positive Change in the Global Digital Landscape, Crafting Innovative Solutions that Transcend Boundaries, Foster Sustainability, and Elevate Business Potential.",
     },
     {
       index: "3",
-      src: "/src/assets/images/set-apart.png",
+      src: setApart,
       title: "What set us apart",
       content:
         "The distinctiveness that sets us apart from others lies in our commitment to innovation, unparalleled quality, and a customer-centric approach.",
