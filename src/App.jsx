@@ -3,6 +3,8 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import WhatWeDo from './components/WhatWeDo';
+import Contact from './components/Contact';
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
         <div className="container mx-auto">
           <About />
           <WhatWeDo />
+          <Contact />
         </div>
+        <Footer />
       </div>
       
     </>
