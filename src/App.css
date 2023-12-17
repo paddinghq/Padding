@@ -14,3 +14,19 @@ h1 {
   border-radius: 0 0 100% 100% / 15rem;
   overflow: hidden;
 }
+
+.line {
+  width: 8.5rem;
+  height: 0.5rem;
+  background-color: #008080; /* Teal color, you can replace this with your desired color */
+  animation: slideRightToLeft 2s linear infinite alternate; /* Adjust the duration and other properties as needed */
+}
+
+@keyframes slideRightToLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

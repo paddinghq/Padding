@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import business from "../../assets/images/business.png";
 
 const Hero = () => {
@@ -18,7 +19,9 @@ const Hero = () => {
                 towards prospective clients.
               </p>
               <button className="bg-neutral-800 text-center text-neutral-50 text-base font-medium font-['Manrope'] p-3 rounded hover:bg-neutral-600 transition-all">
-                Contact Us
+                <Link to="contact" smooth={true} duration={500}>
+                  Contact Us
+                </Link>
               </button>
             </div>
 
