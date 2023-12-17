@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 .curved-background {
   background-color: #B2E4DF;
   border-radius: 0 0 100% 100% / 15rem;
