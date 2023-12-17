@@ -1,7 +1,8 @@
-import './App.css'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import About from './components/About'
+import './App.css';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import About from './components/About';
+import WhatWeDo from './components/WhatWeDo';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Hero />
         <div className="container mx-auto">
           <About />
+          <WhatWeDo />
         </div>
       </div>
       
