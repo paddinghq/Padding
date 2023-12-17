@@ -13,7 +13,7 @@ function App() {
         mobile view not ready
         tab view not ready
       </div>
-      <div className="container mx-auto hidden xl:block">
+      <div className="mx-auto hidden xl:block">
         <div className="container mx-auto">
           <Header />
         </div>
@@ -25,7 +25,6 @@ function App() {
         </div>
         <Footer />
       </div>
-      
     </>
     
   )
