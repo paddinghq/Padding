@@ -22,7 +22,7 @@ const WhatWeDo = () => {
         "We specialize in crafting unique visual identities that resonate with your audience. From logos to brand guidelines, we create a cohesive and memorable brand presence that sets you apart.",
     },
     {
-      index: 2,
+      index: 4,
       title: "Digital Marketing",
       content:
         "We navigate the digital landscape strategically, crafting compelling campaigns that drive engagement and boost visibility. From SEO to social media, our tailored solutions ensure your brand stands out in the digital realm.",

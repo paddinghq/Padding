@@ -1,4 +1,4 @@
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 import paddingLogo from "../../assets/images/padding-logo.png";
 
 const Header = () => {

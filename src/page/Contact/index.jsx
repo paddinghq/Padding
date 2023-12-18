@@ -11,7 +11,7 @@ const Contact = () => {
     <>
       <Element name="contact">
         <section>
-          <div className="flex bg-teal-500 rounded-3xl justify-center gap-24 xl:my-12 xl:p-12">
+          <div className="flex bg-teal-500 rounded-3xl justify-between gap-24 xl:my-12 xl:p-12">
             <div>
               <h2 className="text-neutral-800 xl:text-6xl xl:font-bold">
                 Join Us

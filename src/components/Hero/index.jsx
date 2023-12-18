@@ -13,8 +13,8 @@ const Hero = () => {
                 step at a time
               </h1>
               <p className="text-zinc-700 text-xl leading-loose xl:pt-6 xl:pb-12">
-                We are digital innovators, we bridge the gap between problems and
-                solutions. We provide solutions one step at a time building
+                We are digital innovators, we bridge the gap between problems
+                and solutions. We provide solutions one step at a time building
                 sustainable technological innovations and guiding your brand
                 towards prospective clients.
               </p>
