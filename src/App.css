@@ -2,28 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .scrollbar::-webkit-scrollbar {
-    width: 15px;
-  }
-
-  .scrollbar::-webkit-scrollbar-track {
-    border-radius: 100vh;
-    background: transparent;
-  }
-
-  .scrollbar::-webkit-scrollbar-thumb {
-    background: rgba(215, 171, 38, 0.8);
-    border-radius: 100vh;
-    border: 2px solid rgba(0, 0, 0, 0.156);
-    height: 7.5rem;
-  }
-
-  .scrollbar::-webkit-scrollbar-thumb:hover {
-    background: rgba(215, 170, 38, 0.859);
-  }
-}
-
 h1 {
   font-size: 60px;
   font-weight: 700;

@@ -21,16 +21,24 @@ const Home = () => {
         <div className="mx-auto relative hidden xl:block">
           <div className="container mx-auto">
             <Header />
-            <button className="fixed right-12 bottom-12" onClick={scrollToTop}>
+            <button className="fixed z-10 right-12 bottom-12" onClick={scrollToTop}>
               <FaArrowUp className="h-12 w-12" />
             </button>
           </div>
           <Hero />
 
           <div className="container mx-auto">
+          <Element name="about">
             <About />
+          </Element>
+
+          <Element name="whatwedo">
             <WhatWeDo />
+          </Element>
+
+          <Element name="contact">
             <Contact />
+          </Element>
           </div>
           <Footer />
         </div>

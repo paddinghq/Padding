@@ -1,4 +1,3 @@
-import { Element } from "react-scroll";
 import AboutComp from "./components/AboutComp";
 import vision from "../../assets/images/vision.png";
 import mission from "../../assets/images/mission.png";
@@ -31,41 +30,39 @@ function About() {
 
   return (
     <>
-      <Element name="about">
-        <section>
-          <div className="xl:my-24">
-            <div className="text-center relative">
-              <h1 className="relative pb-4 w-fit mx-auto">
-                About Us
-                <span className="absolute line left-0 top-[75px]"></span>
-              </h1>
-            </div>
-            <div className="xl:pt-8 xl:pb-[56px]">
-              <p className="text-zinc-700 text-center xl:text-lg xl:font-medium">
-                Padding Technologies Limited is a Nigerian digital innovation
-                company founded in 2022. We specialise in software development,
-                UI/UX design, brand identity, digital marketing, web
-                development, mobile app development, e-commerce development,
-                content creation, social media marketing, SEO, and PPC
-                advertising. Our commitment to sustainability sets us apart, and
-                we believe in building technological innovations that not only
-                meet business goals but also contribute positively to the world.
-              </p>
-            </div>
-            <div className="flex justify-between">
-              {AboutItems.map((item) => (
-                <AboutComp
-                  key={item.index}
-                  img={item.src}
-                  alt={item.title}
-                  title={item.title}
-                  content={item.content}
-                />
-              ))}
-            </div>
+      <section>
+        <div className="xl:my-24">
+          <div className="text-center relative">
+            <h1 className="relative pb-4 w-fit mx-auto">
+              About Us
+              <span className="absolute line left-0 top-[75px]"></span>
+            </h1>
           </div>
-        </section>
-      </Element>
+          <div className="xl:pt-8 xl:pb-[56px]">
+            <p className="text-zinc-700 text-center xl:text-lg xl:font-medium">
+              Padding Technologies Limited is a Nigerian digital innovation
+              company founded in 2022. We specialise in software development,
+              UI/UX design, brand identity, digital marketing, web
+              development, mobile app development, e-commerce development,
+              content creation, social media marketing, SEO, and PPC
+              advertising. Our commitment to sustainability sets us apart, and
+              we believe in building technological innovations that not only
+              meet business goals but also contribute positively to the world.
+            </p>
+          </div>
+          <div className="flex justify-between">
+            {AboutItems.map((item) => (
+              <AboutComp
+                key={item.index}
+                img={item.src}
+                alt={item.title}
+                title={item.title}
+                content={item.content}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 }

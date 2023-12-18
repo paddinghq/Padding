@@ -8,7 +8,7 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div className='scrollbar-w-2 scrollbar-track-zinc scrollbar-thumb-blue h-screen overflow-y-scroll scroll-smooth'>
+      <div className='scrollbar-w-2 scrollbar-track-zinc scrollbar-thumb-blue overflow-y-scroll scroll-smooth'>
         <Home />
         
         <Routes>
