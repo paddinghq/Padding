@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Element, animateScroll as scroll } from "react-scroll";
 import Header from "../../components/Header";
 import Hero from "../../components/Hero";
@@ -12,6 +13,23 @@ const Home = () => {
     scroll.scrollToTop();
   };
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollHeight = window.scrollY;
+      const triggerHeight = 500;
+
+      setIsVisible(scrollHeight > triggerHeight);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <Element name="home">
@@ -21,7 +39,7 @@ const Home = () => {
         <div className="mx-auto relative hidden xl:block">
           <div className="container mx-auto">
             <Header />
-            <button className="fixed z-10 right-12 bottom-12" onClick={scrollToTop}>
+            <button  className={`transition-opacity fixed z-10 right-12 bottom-12 ${isVisible ? 'opacity-100' : 'opacity-0'}`} onClick={scrollToTop}>
               <FaArrowUp className="h-12 w-12" />
             </button>
           </div>

@@ -6,18 +6,18 @@ import setApart from "../../assets/images/set-apart.png";
 function About() {
   const AboutItems = [
     {
-      index: "1",
-      src: vision,
-      title: "Vision",
-      content:
-        "Empowering a Connected World Through Sustainable Digital Innovation.",
-    },
-    {
       index: "2",
       src: mission,
       title: "Mission",
       content:
         "To be the Catalyst of Positive Change in the Global Digital Landscape, Crafting Innovative Solutions that Transcend Boundaries, Foster Sustainability, and Elevate Business Potential.",
+    },
+    {
+      index: "1",
+      src: vision,
+      title: "Vision",
+      content:
+        "Empowering a Connected World Through Sustainable Digital Innovation.",
     },
     {
       index: "3",
@@ -39,7 +39,7 @@ function About() {
             </h1>
           </div>
           <div className="xl:pt-8 xl:pb-[56px]">
-            <p className="text-zinc-700 text-center xl:text-lg xl:font-medium">
+            <p className="text-zinc-700 text-center font-thin xl:text-lg">
               Padding Technologies Limited is a Nigerian digital innovation
               company founded in 2022. We specialise in software development,
               UI/UX design, brand identity, digital marketing, web

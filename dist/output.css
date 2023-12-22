@@ -610,6 +610,18 @@ video {
   top: 75px;
 }
 
+.top-\[7\.5px\] {
+  top: 7.5px;
+}
+
+.top-\[8px\] {
+  top: 8px;
+}
+
+.top-\[9px\] {
+  top: 9px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -641,6 +653,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -663,10 +679,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .w-12 {
@@ -853,6 +865,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -900,8 +916,16 @@ video {
   font-weight: 500;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .font-semibold {
   font-weight: 600;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .leading-loose {
@@ -910,6 +934,18 @@ video {
 
 .leading-normal {
   line-height: 1.5;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
+}
+
+.leading-7 {
+  line-height: 1.75rem;
 }
 
 .text-neutral-50 {
@@ -951,6 +987,14 @@ video {
   text-decoration-line: underline;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -959,6 +1003,12 @@ video {
 
 .transition-all {
   transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-opacity {
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1022,6 +1072,16 @@ h1 {
 .before\:h-28::before {
   content: var(--tw-content);
   height: 7rem;
+}
+
+.before\:h-36::before {
+  content: var(--tw-content);
+  height: 9rem;
+}
+
+.before\:h-40::before {
+  content: var(--tw-content);
+  height: 10rem;
 }
 
 .before\:w-\[0\.2rem\]::before {
@@ -1118,10 +1178,6 @@ h1 {
     padding-bottom: 3rem;
   }
 
-  .xl\:pb-28 {
-    padding-bottom: 7rem;
-  }
-
   .xl\:pb-8 {
     padding-bottom: 2rem;
   }
@@ -1185,10 +1241,6 @@ h1 {
 
   .xl\:font-bold {
     font-weight: 700;
-  }
-
-  .xl\:font-medium {
-    font-weight: 500;
   }
 
   .xl\:font-semibold {
