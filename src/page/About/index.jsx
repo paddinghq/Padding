@@ -31,15 +31,16 @@ function About() {
   return (
     <>
       <section>
-        <div className="xl:my-24">
+        <div className="my-16 xl:my-24">
           <div className="text-center relative">
             <h1 className="relative pb-4 w-fit mx-auto">
               About Us
-              <span className="absolute line left-0 top-[75px]"></span>
+              <span className="absolute line left-0 top-10 lg:top-14 xl:top-[75px]"></span>
             </h1>
           </div>
-          <div className="xl:pt-8 xl:pb-[56px]">
-            <p className="text-zinc-700 text-center font-thin xl:text-lg">
+
+          <div className="pt-6 pb-8 lg:pt-8 lg:pb-10 xl:pt-8 xl:pb-14">
+            <p className="text-zinc-700 text-center font-thin text-sm xl:text-lg">
               Padding Technologies Limited is a Nigerian digital innovation
               company founded in 2022. We specialise in software development,
               UI/UX design, brand identity, digital marketing, web
@@ -50,7 +51,8 @@ function About() {
               meet business goals but also contribute positively to the world.
             </p>
           </div>
-          <div className="flex justify-between">
+
+          <div className="flex justify-between flex-col gap-6 md:justify-center md:items-center lg:items-stretch lg:flex-row lg:flex-wrap">
             {AboutItems.map((item) => (
               <AboutComp
                 key={item.index}

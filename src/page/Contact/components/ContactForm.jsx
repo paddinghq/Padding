@@ -41,7 +41,7 @@ function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="bg-white rounded-3xl xl:py-10 xl:px-8">
+      <div className="bg-white rounded-3xl px-4 py-10 xl:px-8">
         <div className="flex flex-col">
           <label htmlFor="name">Name</label>
           <input
@@ -60,7 +60,7 @@ function ContactForm() {
             type="text"
             id="mail"
             required
-            className="w-[402px] border-2 border-stone-500 rounded-lg p-2 mt-2 focus-visible:outline-teal-500"
+            className="border-2 border-stone-500 rounded-lg p-2 mt-2 focus-visible:outline-teal-500 lg:w-[402px]"
             value={formData.mail}
             onChange={handleChange}
           />
@@ -73,7 +73,7 @@ function ContactForm() {
             id="message"
             cols="30"
             rows="6"
-            className="w-[402px] border-2 border-stone-500 rounded-lg p-2 mt-2 focus-visible:outline-teal-500"
+            className="border-2 border-stone-500 rounded-lg p-2 mt-2 focus-visible:outline-teal-500 lg:w-[402px]"
             required
             value={formData.message}
             onChange={handleChange}

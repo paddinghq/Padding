@@ -33,9 +33,6 @@ const Home = () => {
   return (
     <>
       <Element name="home">
-        {/* <div className="xl:hidden">
-          mobile view not ready tab view not ready
-        </div> */}
         <div className="mx-auto relative">
           <div className="container mx-auto">
             <Header />
@@ -51,20 +48,19 @@ const Home = () => {
           
           <Hero />
 
-          <div className="container mx-auto hidden xl:block">
+          <div className="container mx-auto px-4">
             <Element name="about">
               <About />
             </Element>
-
-            <Element name="whatwedo hidden xl:block">
+            
+            <Element name="whatwedo">
               <WhatWeDo />
             </Element>
 
-            <Element name="contact hidden xl:block">
+            <Element name="contact">
               <Contact />
             </Element>
           </div>
-          
           <Footer />
         </div>
       </Element>

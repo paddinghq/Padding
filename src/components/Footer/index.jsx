@@ -3,12 +3,12 @@ import { Link } from "react-scroll";
 const Footer = () => {
   return (
     <footer>
-      <div className="pt-8 mb-20 border-t-2 border-gray-200 hidden xl:block">
+      <div className="pt-8 mb-20 border-t-2 border-gray-200">
         <div className="container mx-auto flex justify-between">
-          <div>
+          <div className="ml-4">
             <p>&copy; Padding technologies 2023</p>
           </div>
-          <nav className="flex">
+          <nav className="hidden lg:flex">
             <ul className="flex justify-between gap-12">
               <li className="text-zinc-700 cursor-pointer text-xl hover:text-teal-600 transition-all">
                 <Link to="about" smooth={true} duration={500}>

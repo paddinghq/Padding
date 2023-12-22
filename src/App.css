@@ -3,9 +3,19 @@
 @tailwind utilities;
 
 h1 {
-  font-size: 60px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 72px;
+  line-height: 40px;
+
+  @media (min-width: 1024px) {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 60px;
+    line-height: 72px;
+  }
 }
 
 .curved-background {
@@ -15,10 +25,15 @@ h1 {
 }
 
 .line {
-  width: 8.5rem;
-  height: 0.5rem;
-  background-color: #008080; /* Teal color, you can replace this with your desired color */
-  animation: slideRightToLeft 2s linear infinite alternate; /* Adjust the duration and other properties as needed */
+  width: 5rem;
+  height: 0.4rem;
+  background-color: #00B2A3;
+  animation: slideRightToLeft 2s linear infinite alternate;
+
+  @media (min-width: 1280px) {
+    width: 8.5rem;
+    height: 0.5rem;
+  }
 }
 
 @keyframes slideRightToLeft {
