@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 const Footer = () => {
   return (
     <footer>
-      <div className="pt-8 mb-20 border-t-2 border-gray-200">
+      <div className="pt-8 mb-20 border-t-2 border-gray-200 hidden xl:block">
         <div className="container mx-auto flex justify-between">
           <div>
             <p>&copy; Padding technologies 2023</p>
