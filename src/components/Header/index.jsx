@@ -76,9 +76,9 @@ const Header = () => {
           </ul>
         </nav>
 
-        <div>
+        <div className="block lg:hidden">
           <button
-            className="block opacity-100 visible absolute top-[2.75rem] z-10 transition-opacity duration-400"
+            className="opacity-100 visible absolute top-[2.75rem] z-10 transition-opacity duration-400"
             onClick={hancleToggle}
           >
             {toggle ? (
