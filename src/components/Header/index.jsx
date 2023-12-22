@@ -33,17 +33,17 @@ const Header = () => {
             <nav className="mt-8">
               <ul className="divide-y space-y-4">
                 <li className="pt-4 text-white cursor-pointer text-xl hover:text-teal-200 transition-all">
-                  <Link to="about" smooth={true} duration={500}>
+                  <Link to="about" smooth={true} duration={500} onClick={hancleToggle}>
                     About Us
                   </Link>
                 </li>
                 <li className="pt-4 text-white cursor-pointer text-xl hover:text-teal-200 transition-all">
-                  <Link to="whatwedo" smooth={true} duration={500}>
+                  <Link to="whatwedo" smooth={true} duration={500} onClick={hancleToggle}>
                     What We Do
                   </Link>
                 </li>
                 <li className="pt-4 text-white cursor-pointer text-xl hover:text-teal-200 transition-all">
-                  <Link to="contact" smooth={true} duration={500}>
+                  <Link to="contact" smooth={true} duration={500} onClick={hancleToggle}>
                     Contact
                   </Link>
                 </li>
