@@ -1,6 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { ThreeDots } from "react-loader-spinner";
 
 function ContactForm() {
+  const form = useRef();
+
   const [initialFormData] = useState({
     name: "",
     mail: "",
@@ -8,6 +12,8 @@ function ContactForm() {
   });
 
   const [formData, setFormData] = useState(initialFormData);
+  const [submissionStatus, setSubmissionStatus] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -19,29 +25,59 @@ function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
-    const storedFormData =
-      JSON.parse(localStorage.getItem("formSubmissions")) || [];
-    const newFormSubmissions = [...storedFormData, formData];
+    emailjs
+      .sendForm(
+        "service_jj21cxc",
+        "template_iy80vbv",
+        form.current,
+        "dMZ5VR7mRgc6mq5ce"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setSubmissionStatus("success");
+          setFormData(initialFormData);
+        },
+        (error) => {
+          console.log(error.text);
+          setSubmissionStatus("error");
+        }
+      )
+      .finally(() => {
+        setIsSubmitting(false);
+      });
+    // const storedFormData =
+    //   JSON.parse(localStorage.getItem("formSubmissions")) || [];
+    // const newFormSubmissions = [...storedFormData, formData];
 
-    localStorage.setItem("formSubmissions", JSON.stringify(newFormSubmissions));
+    // localStorage.setItem("formSubmissions", JSON.stringify(newFormSubmissions));
 
-    console.log(newFormSubmissions);
+    // console.log(newFormSubmissions);
 
-    setFormData(initialFormData);
+    // setFormData(initialFormData);
   };
 
-  useEffect(() => {
-    const storedFormData = JSON.parse(localStorage.getItem("formSubmissions"));
-    if (storedFormData) {
-      setFormData(storedFormData[storedFormData.length - 1]);
-    }
-    setFormData(initialFormData);
-  }, [initialFormData]);
+  // useEffect(() => {
+  //   const storedFormData = JSON.parse(localStorage.getItem("formSubmissions"));
+  //   if (storedFormData) {
+  //     setFormData(storedFormData[storedFormData.length - 1]);
+  //   }
+  //   setFormData(initialFormData);
+  // }, [initialFormData]);
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form ref={form} onSubmit={handleSubmit}>
       <div className="bg-white rounded-3xl px-4 py-10 xl:px-8">
+        {submissionStatus === "success" && (
+          <div className="text-teal-400">Message successfully submitted!</div>
+        )}
+        {submissionStatus === "error" && (
+          <div className="text-red-500">
+            Error submitting the message. Please try again.
+          </div>
+        )}
         <div className="flex flex-col">
           <label htmlFor="name">Name</label>
           <input
@@ -80,12 +116,35 @@ function ContactForm() {
           ></textarea>
         </div>
 
-        <div className="mt-10 text-right">
+        {/* <div className="mt-10 text-right">
           <button
             type="submit"
             className="bg-neutral-800 text-center text-neutral-50 text-base font-medium font-['Manrope'] p-3 rounded hover:bg-neutral-600 transition-all"
           >
             Send message
+          </button>
+        </div> */}
+        <div className="mt-10 text-right">
+          <button
+            type="submit"
+            className="bg-neutral-800 text-center text-neutral-50 text-base font-medium font-['Manrope'] p-3 rounded hover:bg-neutral-600 transition-all relative"
+            disabled={isSubmitting}
+          >
+            {isSubmitting && (
+              <div className="flex items-center justify-center">
+                <ThreeDots
+                  visible={true}
+                  height="20"
+                  width="50"
+                  color="#4fa94d"
+                  radius="9"
+                  ariaLabel="three-dots-loading"
+                  wrapperStyle={{}}
+                  wrapperClass=""
+                />
+              </div>
+            )}
+            {!isSubmitting && "Send message"}
           </button>
         </div>
       </div>
