@@ -50,6 +50,7 @@ function ContactForm() {
       .finally(() => {
         setIsSubmitting(false);
       });
+    }
 
 
   return (
@@ -128,5 +129,6 @@ function ContactForm() {
     </form>
   );
 }
+
 
 export default ContactForm;
