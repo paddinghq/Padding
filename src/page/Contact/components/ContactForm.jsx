@@ -29,10 +29,10 @@ function ContactForm() {
 
     emailjs
       .sendForm(
-        "service_jj21cxc",
-        "template_iy80vbv",
+        "service_z84uat1",
+        "template_tnqatcj",
         form.current,
-        "dMZ5VR7mRgc6mq5ce"
+        "QhV3BMdeULZl3zU0v"
       )
       .then(
         (result) => {
@@ -48,24 +48,6 @@ function ContactForm() {
       .finally(() => {
         setIsSubmitting(false);
       });
-    // const storedFormData =
-    //   JSON.parse(localStorage.getItem("formSubmissions")) || [];
-    // const newFormSubmissions = [...storedFormData, formData];
-
-    // localStorage.setItem("formSubmissions", JSON.stringify(newFormSubmissions));
-
-    // console.log(newFormSubmissions);
-
-    // setFormData(initialFormData);
-  };
-
-  // useEffect(() => {
-  //   const storedFormData = JSON.parse(localStorage.getItem("formSubmissions"));
-  //   if (storedFormData) {
-  //     setFormData(storedFormData[storedFormData.length - 1]);
-  //   }
-  //   setFormData(initialFormData);
-  // }, [initialFormData]);
 
   return (
     <form ref={form} onSubmit={handleSubmit}>
@@ -116,14 +98,6 @@ function ContactForm() {
           ></textarea>
         </div>
 
-        {/* <div className="mt-10 text-right">
-          <button
-            type="submit"
-            className="bg-neutral-800 text-center text-neutral-50 text-base font-medium font-['Manrope'] p-3 rounded hover:bg-neutral-600 transition-all"
-          >
-            Send message
-          </button>
-        </div> */}
         <div className="mt-10 text-right">
           <button
             type="submit"
