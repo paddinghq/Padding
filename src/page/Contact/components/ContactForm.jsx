@@ -23,6 +23,8 @@ function ContactForm() {
     }));
   };
 
+  //handleForm 
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -48,6 +50,7 @@ function ContactForm() {
       .finally(() => {
         setIsSubmitting(false);
       });
+
 
   return (
     <form ref={form} onSubmit={handleSubmit}>
