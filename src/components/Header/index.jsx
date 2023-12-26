@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <header>
       <div className="flex justify-between items-center py-10 px-5 xl:pt-20 xl:pb-8">
-        <div className="w-28">
+        <div className="w-28 md:w-44 xl:w-60">
           <img src={paddingLogo} alt="padding" />
         </div>
 
