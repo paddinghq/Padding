@@ -14,7 +14,7 @@ const Contact = () => {
             <h2 className="text-neutral-800 text-5xl font-semibold xl:text-6xl xl:font-bold">
               Join Us
             </h2>
-            <p className="text-zinc-700 text-sm font-['Manrope'] leading-normal pt-4 lg:text-base lg:w-[494px]">
+            <p className="text-zinc-700 text-sm leading-normal pt-4 lg:text-base lg:w-[494px]">
               Have a knack for creating Awesome Solutions? Willing to learn,
               contribute, and grow as part of a dynamic team? Reach out to us.
               Lets create the next big thing together!
