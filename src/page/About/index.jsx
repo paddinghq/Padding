@@ -40,7 +40,7 @@ function About() {
           </div>
 
           <div className="pt-6 pb-8 lg:pt-8 lg:pb-10 xl:pt-8 xl:pb-14">
-            <p className="text-zinc-700 text-center font-thin text-sm xl:text-lg">
+            <p className="text-zinc-700 text-center text-sm xl:text-lg">
               Padding Technologies Limited is a Nigerian digital innovation
               company founded in 2022. We specialise in software development,
               UI/UX design, brand identity, digital marketing, web

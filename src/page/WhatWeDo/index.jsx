@@ -42,7 +42,7 @@ const WhatWeDo = () => {
                 What We Do
                 <span className="absolute line left-0 top-10 lg:top-[75px]"></span>
               </h1>
-              <p className="py-4 text-zinc-700 text-sm font-thin leading-5 font-['Manrope'] lg:text-lg lg:leading-10">
+              <p className="py-4 text-zinc-700 text-sm text-center leading-5 font-['Manrope'] lg:text-lg lg:leading-10">
                 We provide digital solutions that aid with brand growth,
                 flexible designs that portray brand value and support systems
                 that influence growth and relevance.
@@ -63,7 +63,7 @@ const WhatWeDo = () => {
                     <h5 className="text-zinc-700 font-bold xl:text-xl">
                       {service.title}
                     </h5>
-                    <p className="text-neutral-500 mt-4 text-base leading-7 font-thin font-['Monrope']">
+                    <p className="text-neutral-500 mt-4 text-base leading-7 font-['Monrope']">
                       {service.content}
                     </p>
                   </li>

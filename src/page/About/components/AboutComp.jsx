@@ -4,7 +4,7 @@ const AboutComp = (props) => {
   // const { img, title, content, alt } = props;
 
   return (
-    <div className="bg-neutral-50 shadow-2xl flex-col justify-start gap-6 items-start inline-flex pb-10 px-4 pt-8 md:w-fit xl:pt-10 xl:px-6">
+    <div className="bg-neutral-50 shadow-2xl flex-col justify-start gap-6 items-start rounded-xl inline-flex pb-10 px-4 pt-8 md:w-fit xl:pt-10 xl:px-6">
       <img src={props.img} alt={props.alt} />
       <h3 className="py-4 text-teal-500 font-semibold xl:text-4xl">
         {props.title}

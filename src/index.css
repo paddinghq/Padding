@@ -13,12 +13,18 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #00B2A3;
+  background-color: #00b2a3;
   border-radius: 8px;
 }
 
 /* For Firefox */
 .scrollbar-w-2 {
   scrollbar-width: thin;
-  scrollbar-color: #00B2A3 #f1f1f1; /* thumb color and track color */
+  scrollbar-color: #00b2a3 #f1f1f1; /* thumb color and track color */
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }

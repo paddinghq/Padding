@@ -1,6 +1,8 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ThreeDots } from "react-loader-spinner";
+import user from "../../../assets/images/user.png";
+import mail from "../../../assets/images/mail.png";
 
 function ContactForm() {
   const form = useRef();
@@ -23,8 +25,8 @@ function ContactForm() {
     }));
   };
 
-  //handleForm 
-  
+  //handleForm
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -50,8 +52,7 @@ function ContactForm() {
       .finally(() => {
         setIsSubmitting(false);
       });
-    }
-
+  };
 
   return (
     <form ref={form} onSubmit={handleSubmit}>
@@ -66,26 +67,36 @@ function ContactForm() {
         )}
         <div className="flex flex-col">
           <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            required
-            className="border-2 border-stone-500 rounded-lg p-2 mt-2 focus-visible:outline-teal-500"
-            value={formData.name}
-            onChange={handleChange}
-          />
+          <span className="relative">
+            <input
+              type="text"
+              id="name"
+              required
+              className="w-full border-2 border-stone-500 rounded-lg p-2 mt-2 focus-visible:outline-teal-500"
+              value={formData.name}
+              onChange={handleChange}
+            />
+            <img
+              src={user}
+              alt="user"
+              className="absolute bottom-[0.75rem] left-2"
+            />
+          </span>
         </div>
 
         <div className="my-4 flex flex-col">
           <label htmlFor="mail">Mail</label>
-          <input
-            type="text"
-            id="mail"
-            required
-            className="border-2 border-stone-500 rounded-lg p-2 mt-2 focus-visible:outline-teal-500 lg:w-[402px]"
-            value={formData.mail}
-            onChange={handleChange}
-          />
+          <span className="relative">
+            <input
+              type="text"
+              id="mail"
+              required
+              className="w-full border-2 border-stone-500 rounded-lg p-2 mt-2 focus-visible:outline-teal-500 lg:w-[402px]"
+              value={formData.mail}
+              onChange={handleChange}
+            />
+            <img src={mail} alt="mail" className="absolute bottom-[0.75rem] left-2" />
+          </span>
         </div>
 
         <div className="flex flex-col">
@@ -129,6 +140,5 @@ function ContactForm() {
     </form>
   );
 }
-
 
 export default ContactForm;

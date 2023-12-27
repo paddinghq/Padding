@@ -20,7 +20,7 @@ const Hero = () => {
                 Providing <span className="text-teal-700">solutions</span> one
                 step at a time
               </h1>
-              <p className="mt-4 text-zinc-700 text-sm font-thin lg:leading-loose lg:text-xl xl:pt-6 xl:pb-12">
+              <p className="mt-4 text-zinc-700 text-sm lg:leading-loose lg:text-xl xl:pt-6 xl:pb-12">
                 We are digital innovators, we bridge the gap between problems
                 and solutions. We provide solutions one step at a time building
                 sustainable technological innovations and guiding your brand
