@@ -71,6 +71,7 @@ function ContactForm() {
             <input
               type="text"
               id="name"
+              name="name"
               required
               className="w-full border-2 border-stone-500 rounded-lg p-2 mt-2 focus-visible:outline-teal-500"
               value={formData.name}
@@ -90,6 +91,7 @@ function ContactForm() {
             <input
               type="text"
               id="mail"
+              name="mail"
               required
               className="w-full border-2 border-stone-500 rounded-lg p-2 mt-2 focus-visible:outline-teal-500 lg:w-[402px]"
               value={formData.mail}
